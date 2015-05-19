@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyOCDSucks</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <link rel="stylesheet" href="halloffame.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            var index = 0;
+            var total = 4;
+            var celebs = [{"cname":"Charles Darwin","image":"Celebs/darwin.jpg","bio":"1809-1882 Naturalist, author; OCD and stutter. Darwin's many lifelong and serious illnesses have been the subject of much speculation and study for over a century. Darwin stated that his health problems began as early as 1825 when he was only sixteen years old, and became incapacitating around age 28. The exact nature of Darwin's illness or illnesses remain mysterious at this time. Unless sophisticated molecular probing of his biological remains is allowed, no definitive diagnosis can be reached. It has been speculated that one of Darwin's conditions may have been Obsessive Compulsive Disorder."},{"cname":"Howard Hughes","image":"Celebs/hughes.jpg","bio":"Howard Robard Hughes, Jr. (24 December 1905 - 5 April 1976), was an American aviator, engineer, industrialist, film producer and director, and one of the wealthiest people in the world. By the late 1950s Hughes had developed debilitating symptoms of social avoidance behavior and obsessive-compulsive disorder (OCD). The Aviator (2004), directed by Martin Scorsese and starring Leonardo DiCaprio as Hughes focuses primarily on Hughes' achievements in aviation, in the movies, and on the increasing handicaps imposed on him by his obsessive-compulsive behavior."},{"cname":"Jessica Alba","image":"Celebs/alba.jpg","bio":"(born April 28, 1981) is an American actress whose TV and film credits include Dark Angel, Honey, Sin City, Fantastic Four, Into the Blue, Idle Hands and 2007's Good Luck Chuck. Alba's early life was marked by a multitude of physical maladies; she suffered collapsed lungs twice, had pneumonia 4-5 times a year, a ruptured appendix, and a cyst on her tonsils. She has also acknowledged suffering from obsessive-compulsive disorder during childhood. Her health improved, however, when her family moved to California."},{"cname":"Marc Summers","image":"Celebs/summers.jpg","bio":"born Marc Berkowitz November 11, 1951 in Indianapolis, Indiana, is an American television personality, popular game show host, producer, and a two-time talk show host, perhaps best known for hosting the children's game show Double Dare on Nickelodeon. During an interview with Dr. Eric Hollander on Biggers & Summers, Summers revealed that he has obsessive compulsive disorder. Summers went public about his condition on various television shows, including The Oprah Winfrey Show and The Today Show. In 1999, Summers co-wrote a book with Hollander about his experience called Everything In Its Place: My Trials and Triumphs with Obsessive Compulsive Disorder."}];
+            
+            function load() {
+                /*
+                var request = new XMLHttpRequest();
+                url = "celeb_info.json";
+                request.open("GET", url, true);
+
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                        celebs = JSON.parse(request.responseText);
+                    }
+                }
+
+                request.send();
+                */
+
+                $(celeb_pic).html("<img src='" + celebs[index].image +"' alt='" + celebs[index].cname + "'>");
+                $(celeb_bio).html("<span id='cname'>" + celebs[index].cname + "</span><br>" + celebs[index].bio);
+                $(bottom_ribbon).html("<h4>" + (index + 1) + " of " + total + "</h4>");
+            }
+
+            function next() {
+                index = (index + 1) % total;
+                $(celeb_pic).html("<img src='" + celebs[index].image +"' alt='" + celebs[index].cname + "'>");
+                $(celeb_bio).html("<span id='cname'>" + celebs[index].cname + "</span><br>" + celebs[index].bio);
+                $(bottom_ribbon).html("<h4>" + (index + 1) + " of " + total + "</h4>");
+            }
+
+            function prev() {
+                index--;
+                if (index == -1) {
+                    index = total - 1;
+                }
+                $(celeb_pic).html("<img src='" + celebs[index].image +"' alt='" + celebs[index].cname + "'>");
+                $(celeb_bio).html("<span id='cname'>" + celebs[index].cname + "</span><br>" + celebs[index].bio);
+                $(bottom_ribbon).html("<h4>" + (index + 1) + " of " + total + "</h4>");
+            }
+        </script>
+    </head>
+    <body onload='load()'>
+        <div class="header">
+                <div class="headerContent">
+                    <div id='site_name'><img src='logo.png' alt='Logo'>My OCD Sucks</div>
+                    <div id="navbar">
+                        <ul>
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="sharestories.html">Share Your Stories</a></li>
+                            <li><a href="tools.html">Tools</a></li>
+                            <li><a href="ocdvideos.html">OCD Videos</a></li>
+                            <li><a href="hallofffame.html">OCD Hall of Fame</a></li>
+                            <li><a href="mybattle.html">My Battle</a></li>
+                            <li><a href="https://github.com/Jaroca124">OCD Data</a></li>
+                            <li><a href="https://github.com/Jaroca124">About Me</a></li>
+                            <li><a href="acknowledgments.html">Acknowledgments</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerBreak"></div>
+        </div>
+        <div id='content'>
+            <div class='content_container'>
+                <button id='button_next' onclick="next()"><img id='next_arrow' src="next.png"></button>
+                <div id='celeb_pic'></div>
+                <div id='celeb_bio'></div>
+                <button id='button_prev' onclick="prev()"><img id='back_arrow' src="next.png"></button>
+                <div id='bottom_ribbon'></div>
+            </div>
+        </div>
+    </body>
+</html>
