@@ -139,7 +139,7 @@ html, body {
     text-align: center;
     margin: auto 0;
     display: inline-block;
-    border: 10px solid rgba(0, 0, 0, 0.4);
+    border: 10px solid white;
     background-clip: padding-box;
 }
 
@@ -171,11 +171,12 @@ html, body {
     border: none;
     text-decoration: none;
     background: none;
-    background-color: none;
+    background-color: white;
     display: inline-block;
     float: right;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10px;
 }
 
 #button_prev {
@@ -186,11 +187,12 @@ html, body {
     border: none;
     text-decoration: none;
     background: none;
-    background-color: none;
+    background-color: white;
     display: inline-block;
     float: left;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10px;
 }
 
 #next_arrow {
@@ -224,7 +226,7 @@ html, body {
 #celeb_name {
     font-size: 40px;
     margin-top: -20px;
-    color: black
+    color: white;
 }
 
 #more_info {
@@ -265,14 +267,14 @@ a {
 }
 
 #top {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);;
     border-radius: 10px;
     margin: -20px auto 0;
     display: inline-block;
     padding-top: 20px;
     height: 375px;
     width: 80%;
-    color: black;
+    color: white;
     border: 10px solid rgba(0, 0, 0, 0.4);
     background-clip: padding-box;
     text-align: center;

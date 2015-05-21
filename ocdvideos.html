@@ -9,11 +9,14 @@
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
-        	function init() {
-	        	$(window).scroll(function() {
-					$("#navbar").css("top", Math.max(0,678-$(this).scrollTop()));
-				});
-			}
+        	$(document).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y > $('.header').height()) {
+                    $('#scroll_bar').fadeIn();
+                } else {
+                    $('#scroll_bar').fadeOut();
+                }
+            });
         </script>
     </head>
     <body onload='init()'>
@@ -35,6 +38,21 @@
                     </div>
                 </div>
                 <div class="headerBreak"></div>
+        </div>
+        <div id='scroll_bar'>
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sharestories.html">Share Your Stories</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="ocdvideos.html">OCD Videos</a></li>
+                    <li><a href="halloffame.html">OCD Hall of Fame</a></li>
+                    <li><a href="mybattle.html">My Battle</a></li>
+                    <li><a href="ocddata.html">OCD Data</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="acknowledgments.html">Acknowledgments</a></li>
+                </ul>
+            </div>
         </div>
         <div id='content'>
         	<div id='page_summary'>

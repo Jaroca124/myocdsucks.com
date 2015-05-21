@@ -71,6 +71,42 @@ html, body {
     border-bottom: 2px solid #33CCFF;
 }
 
+#scroll_bar {
+    height: 40px;
+    background: #33CCFF;
+    border-radius: 10px;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    display: none;
+}
+
+#scroll_bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#scroll_bar ul li {
+    list-style: none;
+}
+
+#scroll_bar ul li a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px 11px;
+    color: white;
+}
+
+#scroll_bar ul li a:hover {
+    color: orange;
+}
+
 #content {
     margin: 40px auto 0;
     text-align: center;

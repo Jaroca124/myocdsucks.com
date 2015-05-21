@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="sharestoriesstyle.css"/>
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y > $('.header').height()) {
+                    $('#scroll_bar').fadeIn();
+                } else {
+                    $('#scroll_bar').fadeOut();
+                }
+            });
+        </script>
         
     </head>
     <body onload='init()'>
@@ -29,6 +39,21 @@
                     </div>
                 </div>
                 <div class="headerBreak"></div>
+        </div>
+        <div id='scroll_bar'>
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sharestories.html">Share Your Stories</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="ocdvideos.html">OCD Videos</a></li>
+                    <li><a href="halloffame.html">OCD Hall of Fame</a></li>
+                    <li><a href="mybattle.html">My Battle</a></li>
+                    <li><a href="ocddata.html">OCD Data</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="acknowledgments.html">Acknowledgments</a></li>
+                </ul>
+            </div>
         </div>
         <div id='content'>
             <div class='content_container'><p>Welcome to the MyOCDSucks.com community forum! Write about your experiences with OCD and how (if you have) managed to overcome them. If you have triumphed, tell us some of your effective methods to fight OCD. If you have any groundbreaking news to share or if you want to share your stories with us, go to the Your Experiences category. To start, click "Start a Topic." To choose a forum, click the desired topic under "Categories." If you have any suggestions, try the Suggestion forum. Your participation is appreciated!</p></div>

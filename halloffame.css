@@ -240,7 +240,7 @@ html, body {
 #back_top {
     height: auto;
     width: auto;
-    margin: 250px auto 0;
+    margin: 35% auto 0;
     text-align: center;
     padding-top: 0px;
 }
@@ -278,4 +278,40 @@ a {
     border: 10px solid rgba(0, 0, 0, 0.4);
     background-clip: padding-box;
     text-align: center;
+}
+
+#scroll_bar {
+    height: 40px;
+    background: #33CCFF;
+    border-radius: 10px;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    display: none;
+}
+
+#scroll_bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#scroll_bar ul li {
+    list-style: none;
+}
+
+#scroll_bar ul li a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px 11px;
+    color: white;
+}
+
+#scroll_bar ul li a:hover {
+    color: orange;
 }
