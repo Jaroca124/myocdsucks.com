@@ -10,7 +10,6 @@ html, body {
     background-repeat: no-repeat;
     /*margin: -75px 0 0 -100px;*/
     font-family: 'Nova Square', cursive;
-    overflow: hidden;
  }
 
 .header {
@@ -21,10 +20,11 @@ html, body {
     color: white;
 }
 .headerContent {
-    width: 1050px;
+    width: 80%;
     height: auto;
     top: 0;
     margin: 0 auto;
+    text-align: center;
 }
 
 #site_name {
@@ -72,6 +72,42 @@ html, body {
     border-bottom: 2px solid #33CCFF;
 }
 
+#scroll_bar {
+    height: 40px;
+    background: #33CCFF;
+    border-radius: 10px;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    display: none;
+}
+
+#scroll_bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#scroll_bar ul li {
+    list-style: none;
+}
+
+#scroll_bar ul li a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px 11px;
+    color: white;
+}
+
+#scroll_bar ul li a:hover {
+    color: orange;
+}
+
 #content {
     margin: 40px auto 0;
     text-align: center;
@@ -81,47 +117,11 @@ html, body {
     display: inline-block;
 }
 
-#logo_container {
-    margin: -25px auto 0;
-      text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    height: 300px;
-    width: 82%;
-    color: white;
-    display: inline-block;
-    overflow: hidden;
-}
-
-#page_pic {
-    height: auto;
-    width: auto;
-    margin: -375px 0 0 0px;
-}
-
 .content_container {
     margin: 20px auto 0;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    height: 325px;
-    width: 80%;
-    color: black;
-    display: inline-block;
-    border: 10px solid rgba(0, 0, 0, 0.4);
-    background-clip: padding-box;
-}
-
-.title {
-  font-size: 40px;
-  text-align: center;
-}
-
-#page_summary {
-    margin: 20px auto 0;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
     height: auto;
     width: 80%;
     color: black;
@@ -130,122 +130,43 @@ html, body {
     background-clip: padding-box;
 }
 
-#celeb_pic {
-    border-radius: 100%;
-    overflow: hidden;
-    float: center;
+.content_container p {
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#intro_text {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    float: left;
+    /*background-color: red;*/
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#logo img {
     height: 250px;
     width: 250px;
-    text-align: center;
-    margin: auto 0;
-    display: inline-block;
-    border: 10px solid white;
-    background-clip: padding-box;
+    margin: 10px;
 }
 
-#celeb_pic img {
-    height: 300px;
-    width: 300px;
-}
-
-#celeb_bio {
-    width: 500px;
-    height: 275px;
-    padding: 10px;
-    margin-top: 15px;
-    margin-bottom: 150px;
-    float: center;
-    display: inline-block;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    border: 10px solid rgba(0, 0, 0, 0.4);
-    background-clip: padding-box;
-}
-
-#button_next {
-    height: 325px;
-    width: 50px;
-    /*margin-right: 400px;*/
-    margin-top: -10px;
-    border: none;
-    text-decoration: none;
-    background: none;
-    background-color: white;
-    display: inline-block;
+#summary {
     float: right;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-}
-
-#button_prev {
-    height: 325px;
-    width: 50px;
-    /*margin-left: 400px;*/
-    margin-top: -10px;
-    border: none;
-    text-decoration: none;
-    background: none;
-    background-color: white;
-    display: inline-block;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-}
-
-#next_arrow {
-    height: 100px;
-    width: 50px;
-}
-
-#back_arrow {
-    height: 100px;
-    width: 50px;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-#bottom_ribbon {
-    width: auto;
-    height: 25px;
-    text-align: center;
-    margin: 0px;
-    display: fixed;
-    background-color: red;
-}
-
-#cname {
-    font-size: 30px;
-}
-
-#celeb_name {
-    font-size: 40px;
-    margin-top: -20px;
-    color: white;
-}
-
-#more_info {
+    /*background-color: green;*/
     height: auto;
-    margin: auto 0;
-    text-align: center;
-    padding-top: 0px;
-    margin-top: 15px;
+    width: 50%;
+    font-size: 20px;
 }
 
-#back_top {
-    height: auto;
-    width: auto;
-    margin: 250px auto 0;
-    text-align: center;
-    padding-top: 0px;
-}
-
-#scroll_button {
+#sharestories {
   background-color: red;
   color: white;
   font-family: 'Lato', sans-serif;
@@ -260,22 +181,4 @@ html, body {
   width:120px;
   height: 32px;
   padding: 10px;
-}
-
-a {
-    cursor: default;
-}
-
-#top {
-    background-color: rgba(0, 0, 0, 0.4);;
-    border-radius: 10px;
-    margin: -20px auto 0;
-    display: inline-block;
-    padding-top: 20px;
-    height: 375px;
-    width: 80%;
-    color: white;
-    border: 10px solid rgba(0, 0, 0, 0.4);
-    background-clip: padding-box;
-    text-align: center;
 }
