@@ -40,7 +40,7 @@ html, body {
 
 #navbar {
     height: 40px;
-    background: #33CCFF;
+    background: #e61050; /*Light Blue: #33CCFF;*/
     border-radius: 10px;
 }
 

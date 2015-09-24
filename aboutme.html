@@ -5,13 +5,13 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
         <meta charset="utf-8" />
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <link rel="stylesheet" href="ocdvideosstyle.css"/>
+        <link rel="stylesheet" href="mybattlestyle.css"/>
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
-        	$(document).scroll(function() {
+            $(document).scroll(function() {
                 var y = $(this).scrollTop();
                 if (y > $('.header').height()) {
                     $('#scroll_bar').fadeIn();
@@ -21,7 +21,7 @@
             });
         </script>
     </head>
-    <body onload='init()'>
+    <body>
         <div class="header">
                 <div class="headerContent">
                     <div id='site_name' onclick="location.href='index.html';"><img src='logo.png' alt='Logo'>My OCD Sucks</div>
@@ -57,24 +57,6 @@
             </div>
         </div>
         <div id='content'>
-        	<div id='page_summary'>
-                <p style='padding-left: 10px; padding-right: 10px;'><span class='title'>OCD Videos</span><br><br>Here are some interesting videos about OCD. Some explain the science behind the disorder, while some teach some coping mechanisms.</p>
-            </div>
-            <div class='content_container'>
-                <iframe width="799" height="449" src="https://www.youtube.com/embed/ntKTEW1ZCho" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class='content_container'>
-                <iframe width="799" height="449" src="https://www.youtube.com/embed/6GdALwuYtG8" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class='content_container'>
-                <iframe width="799" height="449" src="https://www.youtube.com/embed/tPFQMRx2l3Y" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class='content_container'>
-                <iframe width="799" height="449" src="https://www.youtube.com/embed/ysFPLrt7UD0" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class='content_container'>
-                <iframe width="799" height="449" src="https://www.youtube.com/embed/w3CrEWz-zG4" frameborder="0" allowfullscreen></iframe>
-            </div>
         </div>
     </body>
 </html>
