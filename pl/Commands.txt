@@ -1,0 +1,4 @@
+SASS: in /css - sass style.scss style.css
+
+Generate PL: in /pl - php core/console --server --with-watch
+Refresh page
