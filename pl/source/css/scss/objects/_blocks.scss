@@ -1,0 +1,29 @@
+.block-post {
+    @include md-2dp;
+    width: 100%;
+    min-height: 100px;
+    max-height: 30vh;
+    
+    .post-date {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        background-color: rgba(0,0,0,.8);
+        color: $white;
+    }
+    
+    .post-image-wrapper {
+        height: 150px;
+        overflow: hidden;
+        .post-image {
+            object-fit: cover;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+    
+    .post-title {
+        @include md-2dp;
+        background-color: $white;
+    }
+}

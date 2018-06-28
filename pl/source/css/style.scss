@@ -56,8 +56,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 /*------------------------------------*\
     $FRAMEWORKS
 \*------------------------------------*/
-//@import "../_frameworks/materialize-src/sass/materialize";
-@import "../_frameworks/bootstrap-4.0.0/scss/bootstrap";
+@import "frameworks/bootstrap-4.0.0/scss/bootstrap";
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
@@ -76,6 +75,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 @import "scss/base/forms";
 @import "scss/base/tables";
 @import "scss/base/animation";
+@import "scss/base/material-design";
 
 
 /*------------------------------------*\
