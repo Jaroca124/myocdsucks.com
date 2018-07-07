@@ -2,6 +2,10 @@
   "title" : "Pattern Lab",
   "htmlClass": "pl",
   "bodyClass": "body",
+  "btn": {
+      "style": "primary-btn",
+      "text": "Primary Buttton"
+  },
   "img": {
     "landscape_4x3": {
       "src": "../../images/fpo_4x3.png",

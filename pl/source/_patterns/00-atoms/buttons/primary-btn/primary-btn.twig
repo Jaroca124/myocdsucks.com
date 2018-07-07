@@ -1,0 +1,3 @@
+{% set btn_data = btn_data|default( btn ) %}
+
+<div {% if btn_data.function is not empty%}onclick="{{ btn_data.function }}"{% endif %} class="btn {{ btn_data.style }}">{{ btn_data.text }}</div>
