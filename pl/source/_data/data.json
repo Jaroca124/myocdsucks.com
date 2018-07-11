@@ -7,6 +7,10 @@
       "text": "Primary Buttton"
   },
   "img": {
+    "primary": {
+        "src": "../../images/fpo_16x9.png",
+        "alt": "16x9 Image"
+    },
     "landscape_4x3": {
       "src": "../../images/fpo_4x3.png",
       "alt": "4x3 Image"
