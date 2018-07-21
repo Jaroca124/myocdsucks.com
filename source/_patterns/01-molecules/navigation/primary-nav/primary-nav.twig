@@ -1,4 +1,6 @@
-<nav id="nav" class="nav">
+{% set primary_nav_style = primary_nav_style|default('') %}
+
+<nav id="nav" class="nav {{ primary_nav_style }}">
 	<ul class="nav-list">
 		<li><a href="{{ url }}">Home</a></li>
 		<li><a href="{{ url }}">About</a></li>
